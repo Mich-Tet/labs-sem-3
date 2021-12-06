@@ -1,5 +1,4 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -65,9 +64,10 @@ int main()
 		{
 			break;
 		}
-		else if (/* I dont know how to make it work */)
+		else if (dna.find(value)== dna.end())
 		{
 			cout << "There is no such a sequence\n";
+			continue;
 		}
 		auto iterator = dna.find(value);
 		cout << "For the sequence:" << "\n" << iterator->first << "\n" << "The shape is:" << "\n"
